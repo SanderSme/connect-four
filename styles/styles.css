@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  background-color: rgb(215, 244, 255);
+  position: relative;
+}
+
+.heading {
+  padding-top: 17rem;
+  padding-bottom: 2rem;
+}
+
+#image-container {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#image {
+  height: 240px;
+  background-color: rgb(215, 244, 255);
+  animation: move-right 30s linear infinite;
+}
+
+#image-container2 {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#image2 {
+  height: 180px;
+  background-color: rgb(215, 244, 255);
+  animation: move-right 40s linear infinite;
+}
+
+@keyframes move-right {
+  from {
+    transform: translateX(-450%);
+  }
+  to {
+    transform: translateX(450%);
+  }
+}
+
+#board {
+  height: 540px;
+  width: 630px;
+  background-color: brown;
+  border: 10px solid darkred;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.tile {
+  height: 70px;
+  width: 70px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 5px;
+  border: 5px solid darkred;
+  cursor: pointer;
+}
+
+.red-piece {
+  background-color: red;
+}
+
+.yellow-piece {
+  background-color: yellow;
+}

@@ -1,3 +1,4 @@
+const newGameBtn = document.querySelector(".newGameBtn")
 
 let playerRed = "R"
 let playerYellow = "Y"
@@ -108,10 +109,16 @@ function checkWinner() {
 function setWinner(r, c) {
     let winner = document.getElementById("winner")
     if(board[r][c] == playerRed) {
-        winner.innerText = "Red Player Wins"
+        winner.innerText = "🏆Red Player Wins🏆"
+        winner.classList.add('red')
     } else {
-        winner.innerText = "Yellow Player Wins"
+        winner.innerText = "🏆Yellow Player Wins🏆"
+        winner.classList.add('yellow')
     }
 
     gameOver = true
 }
+
+newGameBtn.addEventListener('click', () => {
+    location.reload()
+})

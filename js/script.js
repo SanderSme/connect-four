@@ -1,3 +1,4 @@
+
 const newGameBtn = document.querySelector(".newGameBtn")
 
 let playerRed = "R"
@@ -14,6 +15,8 @@ let columns = 7;
 window.onload = function() {
     setGame();
 }
+
+
 
 function setGame() {
     board = []
@@ -33,6 +36,7 @@ function setGame() {
         board.push(row)
     }
 }
+
 
 function setPiece() {
     if(gameOver) {
@@ -62,6 +66,8 @@ function setPiece() {
 
     checkWinner()
 }
+
+
 
 function checkWinner() {
     for (let r = 0; r < rows; r++) {
@@ -111,6 +117,7 @@ function setWinner(r, c) {
     if(board[r][c] == playerRed) {
         winner.innerText = "🏆Red Player Wins🏆"
         winner.classList.add('red')
+
     } else {
         winner.innerText = "🏆Yellow Player Wins🏆"
         winner.classList.add('yellow')

@@ -6,6 +6,9 @@ body {
   text-align: center;
   background-color: rgb(215, 244, 255);
   position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .heading {
@@ -58,7 +61,6 @@ body {
 
 .red {
   color: red;
-  width: 15%;
   padding: 1rem;
   margin: 0 auto;
   background-color: darkblue;
@@ -67,9 +69,12 @@ body {
 
 .yellow {
   color: yellow;
-  width: 15%;
   padding: 1rem;
   margin: 0 auto;
   background-color: darkblue;
   margin-bottom: 1rem;
+}
+
+.wins {
+  font-size: 2rem;
 }
